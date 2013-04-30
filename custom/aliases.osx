@@ -1,0 +1,14 @@
+
+# Enable colored output for ls
+alias ls="ls -G"
+
+# Package managing
+alias pinstall='brew install'
+alias premove='brew remove'
+alias psearch='brew search'
+alias pshow='brew info'
+alias pupdate='brew update'
+alias pupgrade='brew upgrade'
+
+alias ntpforcesync="sudo ntpdate -u $(systemsetup -getnetworktimeserver|awk '{print $4}')"
+

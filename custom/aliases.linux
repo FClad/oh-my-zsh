@@ -1,0 +1,13 @@
+
+# Enable colored output for ls
+alias ls='ls --color=auto'
+
+# Package managing
+alias pinstall='sudo aptitude install'
+alias preinstall='sudo aptitude reinstall'
+alias premove='sudo aptitude remove'
+alias psearch='aptitude search'
+alias pshow='aptitude show'
+alias pupdate='sudo aptitude update'
+alias pupgrade='sudo aptitude safe-upgrade'
+
