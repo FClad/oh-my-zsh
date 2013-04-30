@@ -15,7 +15,7 @@ tm() {
 		if [[ $? -eq 1 ]]; then
 			echo "Usage: tm <session>";
 		else
-			nb=`echo "$list" | wc -l`
+			nb=`echo "$list" | wc -l | sed 's/ //g'`
 			if [[ $nb == "1" ]]; then
 				tmux attach
 			else
