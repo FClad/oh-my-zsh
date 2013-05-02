@@ -1,4 +1,8 @@
 
+# Load Seebi's dircolors
+# (https://github.com/seebi/dircolors-solarized)
+eval `dircolors $ZSH/custom/dircolors.ansi-universal`
+
 # Enable colored output for ls
 alias ls='ls --color=auto'
 
