@@ -30,6 +30,15 @@ tm() {
 }
 
 
+# Execute a command in a new detached tmux session
+tmexec() {
+        if [ $# -gt 0 ]; then
+                tmcom="$@"
+                tmux new -d "exec $tmcom"
+        fi
+}
+
+
 # For colored man pages
 # (source: https://wiki.archlinux.org/index.php/Man_Page)
 man() {
